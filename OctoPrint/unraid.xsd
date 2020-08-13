@@ -1,0 +1,93 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Container">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Name"/>
+        <xs:element type="xs:string" name="Repository"/>
+        <xs:element name="Branch" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Tag"/>
+              <xs:element type="xs:string" name="TagDescription"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="Registry"/>
+        <xs:element type="xs:string" name="Network"/>
+        <xs:element type="xs:string" name="MyIP"/>
+        <xs:element type="xs:string" name="Shell"/>
+        <xs:element type="xs:string" name="Privileged"/>
+        <xs:element type="xs:string" name="Support"/>
+        <xs:element type="xs:string" name="Project"/>
+        <xs:element type="xs:string" name="Overview"/>
+        <xs:element type="xs:string" name="Category"/>
+        <xs:element type="xs:anyURI" name="WebUI"/>
+        <xs:element type="xs:string" name="TemplateURL"/>
+        <xs:element type="xs:string" name="Icon"/>
+        <xs:element type="xs:string" name="ExtraParams"/>
+        <xs:element type="xs:string" name="PostArgs"/>
+        <xs:element type="xs:string" name="CPUset"/>
+        <xs:element type="xs:string" name="DonateText"/>
+        <xs:element type="xs:string" name="DonateLink"/>
+        <xs:element type="xs:string" name="Description"/>
+        <xs:element name="Networking">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Mode"/>
+              <xs:element name="Publish">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Port">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:short" name="HostPort"/>
+                          <xs:element type="xs:short" name="ContainerPort"/>
+                          <xs:element type="xs:string" name="Protocol"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Volume">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="HostDir"/>
+                    <xs:element type="xs:string" name="ContainerDir"/>
+                    <xs:element type="xs:string" name="Mode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="Environment"/>
+        <xs:element type="xs:string" name="Labels"/>
+        <xs:element name="Config" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+                <xs:attribute type="xs:string" name="Target" use="optional"/>
+                <xs:attribute type="xs:string" name="Default" use="optional"/>
+                <xs:attribute type="xs:string" name="Mode" use="optional"/>
+                <xs:attribute type="xs:string" name="Description" use="optional"/>
+                <xs:attribute type="xs:string" name="Type" use="optional"/>
+                <xs:attribute type="xs:string" name="Display" use="optional"/>
+                <xs:attribute type="xs:string" name="Required" use="optional"/>
+                <xs:attribute type="xs:string" name="Mask" use="optional"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="version"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
