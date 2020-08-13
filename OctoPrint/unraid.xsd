@@ -55,7 +55,7 @@
         <xs:element name="Data">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Volume">
+              <xs:element name="Volume" maxOccurs="unbounded"  minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element type="xs:string" name="HostDir"/>
@@ -67,7 +67,21 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element type="xs:string" name="Environment"/>
+        <xs:element name="Environment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Variable" maxOccurs="unbounded"  minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Value" type="xs:string" />
+                    <xs:element name="Name" type="xs:string" />
+                    <xs:element name="Mode" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element type="xs:string" name="Labels"/>
         <xs:element name="Config" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
