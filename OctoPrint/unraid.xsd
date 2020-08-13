@@ -21,7 +21,7 @@
         <xs:element type="xs:string" name="Project"/>
         <xs:element type="xs:string" name="Overview"/>
         <xs:element type="xs:string" name="Category"/>
-        <xs:element type="xs:anyURI" name="WebUI"/>
+        <xs:element type="xs:string" name="WebUI"/>
         <xs:element type="xs:string" name="TemplateURL"/>
         <xs:element type="xs:string" name="Icon"/>
         <xs:element type="xs:string" name="ExtraParams"/>
