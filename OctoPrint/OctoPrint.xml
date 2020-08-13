@@ -73,8 +73,7 @@
 		Mode="rw"
 		Description="Container Path: /home/octoprint"
 		Type="Path" Display="always"
-		Required="true" Mask="false">
-		/mnt/user/appdata/octoprint
+		Required="true" Mask="false">/mnt/user/appdata/octoprint
 	</Config>
 	<Config
 		Name="WebUI"
@@ -85,8 +84,7 @@
 		Type="Port"
 		Display="always"
 		Required="true"
-		Mask="false">
-		5000
+		Mask="false">5000
 	</Config>
 	<Config
 		Name="Printer USB Port"
@@ -97,6 +95,6 @@
 		Type="Device"
 		Display="always"
 		Required="true"
-		Mask="false">
+		Mask="false">/dev/ttyACM0
 	</Config>
 </Container>
