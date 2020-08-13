@@ -8,8 +8,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    - name: Download schema
+      run: wget https://raw.githubusercontent.com/Mearman/unraid-template-schema/master/unraid.xsd
+    - name: cat schema
+      run: cat ./unraid.xsd
     - name: Lint OctoPrint.xml
       uses: ChristophWurst/xmllint-action@v1
       with:
         xml-file: ./OctoPrint/OctoPrint.xml
-        xml-schema-file: ./OctoPrint/unraid.xsd
+        xml-schema-file: ./unraid.xsd
