@@ -95,6 +95,6 @@
 		Type="Device"
 		Display="always"
 		Required="true"
-		Mask="false">
+		Mask="false">/dev/ttyACM0
 	</Config>
 </Container>
