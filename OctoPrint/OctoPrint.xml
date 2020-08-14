@@ -66,35 +66,7 @@
 	</Data>
 	<Environment/>
 	<Labels/>
-	<Config 
-		Name="config"
-		Target="/home/octoprint"
-		Default="/mnt/user/appdata/octoprint"
-		Mode="rw"
-		Description="Container Path: /home/octoprint"
-		Type="Path" Display="always"
-		Required="true" Mask="false">/mnt/user/appdata/octoprint
-	</Config>
-	<Config
-		Name="WebUI"
-		Target="5000"
-		Default="5000"
-		Mode="tcp"
-		Description="Container Port: 5000"
-		Type="Port"
-		Display="always"
-		Required="true"
-		Mask="false">5000
-	</Config>
-	<Config
-		Name="Printer USB Port"
-		Target=""
-		Default="/dev/ttyACM0"
-		Mode=""
-		Description="Container Device: "
-		Type="Device"
-		Display="always"
-		Required="true"
-		Mask="false">/dev/ttyACM0
-	</Config>
+	<Config Name="config" Target="/home/octoprint" Default="/mnt/user/appdata/octoprint" Mode="rw" Description="Container Path: /home/octoprint" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/octoprint</Config>
+	<Config	Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+	<Config Name="Printer USB Port" Target="" Default="/dev/ttyACM0" Mode="" Description="Container Device: " Type="Device" Display="always" Required="true" Mask="false">/dev/ttyACM0</Config>
 </Container>
