@@ -4,15 +4,15 @@
 	<Repository>octoprint/octoprint:latest-camera</Repository>
 	<Branch>
 		<Tag>latest-camera</Tag>
-		<TagDescription>Latest stable release of OctoPrint.</TagDescription>
+		<TagDescription>Latest stable release of Python 3 OctoPrint.</TagDescription>
 	</Branch>
 	<Branch>
 		<Tag>1-camera</Tag>
-		<TagDescription>Latest stable version of OctoPrint 1.X.X</TagDescription>
+		<TagDescription>Latest stable version of Python 3 OctoPrint 1.X.X</TagDescription>
 	</Branch>
 	<Branch>
 		<Tag>1.4-camera</Tag>
-		<TagDescription>Latest stable version of OctoPrint 1.4.X</TagDescription>
+		<TagDescription>Latest stable version of Python 3 OctoPrint 1.4.X</TagDescription>
 	</Branch>
 	<Registry>https://hub.docker.com/r/octoprint/octoprint</Registry>
 	<Network>bridge</Network>
