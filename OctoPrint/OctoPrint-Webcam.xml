@@ -14,18 +14,6 @@
 		<Tag>1.4-camera</Tag>
 		<TagDescription>Latest stable version of OctoPrint 1.4.X</TagDescription>
 	</Branch>
-	<Branch>
-		<Tag>latest-python3-camera</Tag>
-		<TagDescription>Latest stable version of Python3 OctoPrint.</TagDescription>
-	</Branch>
-	<Branch>
-		<Tag>1-python3-camera</Tag>
-		<TagDescription>Latest stable version of Python3 OctoPrint 1.X.X</TagDescription>
-	</Branch>
-	<Branch>
-		<Tag>1.4-python3-camera</Tag>
-		<TagDescription>Latest stable version of Python3 OctoPrint 1.4.X</TagDescription>
-	</Branch>
 	<Registry>https://hub.docker.com/r/octoprint/octoprint</Registry>
 	<Network>bridge</Network>
 	<MyIP/>
